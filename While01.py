@@ -6,4 +6,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    l = len(s)
+    n = 0
+    i = 0
+    while l>0:
+        l = l-1
+        if s[n].isdigit():
+            i = i+1
+        n = n + 1
+    return i
+print(main("a24bc"))
+print(main("python 2022"))

@@ -6,4 +6,13 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    l = len(s)
+    i = 0
+    yig = 0
+    while l>0:
+        l= l-1
+        if s[i].islower():
+            yig += 1
+        i += 1
+    return yig
+print(main("AsroR Junior"))
