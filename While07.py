@@ -6,4 +6,14 @@ def main(s):
     Returns:
         int: return answer
     """
-    return
+    l = len(s)
+    i = 0
+    yigindi = 0
+    while l>0:
+        l -= 1
+        if s[i].isdigit():
+            if int(s[i])%2==0:
+                yigindi += 1
+        i += 1
+    return yigindi
+print(main("141531a234"))
